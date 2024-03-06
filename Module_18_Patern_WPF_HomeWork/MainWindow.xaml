@@ -1,0 +1,114 @@
+﻿<Window x:Class="Module_18_Patern_WPF_HomeWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Module_18_Patern_WPF_HomeWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid
+        Background="Beige">
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" 
+                  Margin="348,10,10,183"
+                  AutoGenerateColumns="True"
+                  x:Name="dataGridAnimals"
+                  Background="Azure"/>
+        <Button Content="Update" 
+                HorizontalAlignment="Left" 
+                Margin="348,281,0,0" 
+                VerticalAlignment="Top" 
+                Width="93"
+                Click="btnUpdate"/>
+        <Button Content="Create" 
+                HorizontalAlignment="Left" 
+                Margin="522,281,0,0" 
+                VerticalAlignment="Top" 
+                Width="94"
+                Click="btnCreate"/>
+        <Button Content="Delete" 
+                HorizontalAlignment="Left" 
+                Margin="696,281,0,0" 
+                VerticalAlignment="Top" 
+                Width="94"
+                Click="btnDelete"/>
+        <Button Content="All" 
+            HorizontalAlignment="Left" 
+            Margin="523,327,0,0" 
+            VerticalAlignment="Top" 
+            Width="93"
+            Click="btnAll" RenderTransformOrigin="0.482,1.816"/>
+        <Button Content="Mammals" 
+            HorizontalAlignment="Left" 
+            Margin="347,374,0,0" 
+            VerticalAlignment="Top" 
+            Width="94"
+            Click="btnMammals"/>
+        <Button Content="Birds" 
+            HorizontalAlignment="Left" 
+            Margin="522,374,0,0" 
+            VerticalAlignment="Top" 
+            Width="94"
+            Click="btnBirds"/>
+        <Button Content="Amphibians" 
+            HorizontalAlignment="Left" 
+            Margin="696,374,0,0" 
+            VerticalAlignment="Top" 
+            Width="94"
+            Click="btnAmphibians"/>
+        <TextBox HorizontalAlignment="Left" 
+                 Margin="223,47,0,0" 
+                 TextWrapping="Wrap" 
+                 Name="txtId"
+                 VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="29,49,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="ID" 
+                   VerticalAlignment="Top" 
+                   Width="97"/>
+        <TextBox HorizontalAlignment="Left" 
+            Margin="223,68,0,0" 
+            TextWrapping="Wrap" 
+            x:Name="txtCount"
+            VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" 
+            Margin="29,70,0,0" 
+            TextWrapping="Wrap" 
+            Text="Count" 
+            VerticalAlignment="Top" 
+            Width="97"/>
+        <TextBox HorizontalAlignment="Left" 
+            Margin="223,89,0,0" 
+            TextWrapping="Wrap" 
+            x:Name="txtName"
+            VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" 
+            Margin="29,91,0,0" 
+            TextWrapping="Wrap" 
+            Text="Name" 
+            VerticalAlignment="Top" 
+            Width="97"/>
+        <TextBox HorizontalAlignment="Left" 
+            Margin="157,110,0,0" 
+            TextWrapping="Wrap" 
+            x:Name="txtDescription"
+            VerticalAlignment="Top" Width="186" Height="94"/>
+        <TextBlock HorizontalAlignment="Left" 
+            Margin="29,188,0,0" 
+            TextWrapping="Wrap" 
+            Text="Description" 
+            VerticalAlignment="Top" 
+            Width="97"/>
+        <TextBox HorizontalAlignment="Left" 
+            Margin="223,24,0,0" 
+            TextWrapping="Wrap" 
+            x:Name="txtType"
+            VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" 
+            Margin="29,27,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="97" Height="15"><Run Text="Type"/><LineBreak/><Run/></TextBlock>
+
+    </Grid>
+</Window>

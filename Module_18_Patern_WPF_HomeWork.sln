@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34607.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module_18_Pattern_WPF_HomeWork", "Module_18_Patern_WPF_HomeWork\Module_18_Pattern_WPF_HomeWork.csproj", "{AD992E2B-A761-4BC5-85F9-43BC8B98D029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module_18_Pattern_Console_HomeWork", "Module_18_Patern_Console_HomeWork\Module_18_Pattern_Console_HomeWork.csproj", "{A6E5F17E-78CA-414D-A67B-278EEB318965}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD992E2B-A761-4BC5-85F9-43BC8B98D029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD992E2B-A761-4BC5-85F9-43BC8B98D029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD992E2B-A761-4BC5-85F9-43BC8B98D029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD992E2B-A761-4BC5-85F9-43BC8B98D029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6E5F17E-78CA-414D-A67B-278EEB318965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E5F17E-78CA-414D-A67B-278EEB318965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E5F17E-78CA-414D-A67B-278EEB318965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E5F17E-78CA-414D-A67B-278EEB318965}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F03B9374-CC27-49F4-8CB0-E4A80F90790E}
+	EndGlobalSection
+EndGlobal
