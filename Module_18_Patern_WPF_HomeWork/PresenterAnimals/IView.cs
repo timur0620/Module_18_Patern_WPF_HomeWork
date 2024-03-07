@@ -7,13 +7,13 @@ using Module_18_Pattern_Console_HomeWork;
 using Module_18_Pattern_Console_HomeWork.Model;
 namespace Module_18_Patern_WPF_HomeWork.PresenterAnimals
 {
-    internal interface IView
+     interface IView
     {
-        int  id {  get; set; }
-        string Type { get; set; }
-        int Count { get;}
-        string Name { get; set; }
-        string Description { get; set; }    
+        //string  id {  get; set; }
+        //string Type { get; set; }
+        //string Count { get; set; }
+        //string Name { get; set; }
+        //string Description { get; set; }    
         List<IAnimals> animals { get; set; }    
 
         

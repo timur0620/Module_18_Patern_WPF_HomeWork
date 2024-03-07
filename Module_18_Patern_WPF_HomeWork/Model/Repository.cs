@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Bogus;
+using Module_18_Pattern_WPF_HomeWork.PresenterAnimals;
 
 namespace Module_18_Pattern_Console_HomeWork.Model
 {
-     public class Repository
+     public class Repository: IModel
     {
         List<IAnimals> db;
         public Repository()

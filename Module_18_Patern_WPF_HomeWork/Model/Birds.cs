@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Module_18_Pattern_WPF_HomeWork.PresenterAnimals;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Module_18_Pattern_Console_HomeWork.Model
 {
@@ -26,6 +28,5 @@ namespace Module_18_Pattern_Console_HomeWork.Model
         {
             return $"{id} {Count} {Name} {Description} {Type}";
         }
-
     }
 }

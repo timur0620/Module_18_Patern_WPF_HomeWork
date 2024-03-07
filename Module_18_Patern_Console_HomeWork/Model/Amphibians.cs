@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Module_18_Pattern_Console_HomeWork.Model
 {
-    class Amphibians : IAnimals
+    public class Amphibians : IAnimals
     {
         public int id { get; set; }
         public int Count { get; set; }

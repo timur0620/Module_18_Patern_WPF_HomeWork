@@ -1,4 +1,6 @@
-﻿using Module_18_Patern_WPF_HomeWork.PresenterAnimals;
+﻿using Module_18_Patern_WPF_HomeWork.Model;
+using Module_18_Patern_WPF_HomeWork.Model.SaveToFile.Context;
+using Module_18_Patern_WPF_HomeWork.PresenterAnimals;
 using Module_18_Pattern_Console_HomeWork.Model;
 using System;
 using System.Collections.Generic;
@@ -14,6 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Bogus;
 
 namespace Module_18_Patern_WPF_HomeWork
 {
@@ -30,42 +33,51 @@ namespace Module_18_Patern_WPF_HomeWork
 
         private void btnUpdate(object sender, RoutedEventArgs e)
         {
-            presenter.Update();
+
         }
 
         private void btnCreate(object sender, RoutedEventArgs e)
         {
-            presenter.Create();
+
         }
 
         private void btnDelete(object sender, RoutedEventArgs e)
         {
-            presenter.Delete();
+   
         }
 
         private void btnAll(object sender, RoutedEventArgs e)
         {
-            dataGridAnimals.ItemsSource =  presenter.GetAllAnimals();
+            //presenter = new Presenter(this);
+            //dataGridAnimals.ItemsSource = presenter.ResultGetAnimals();
+
+            //ContextAnimals db  = new ContextAnimals();
+
         }
+
         private void btnMammals(object sender, RoutedEventArgs e)
         {
-            dataGridAnimals.ItemsSource = presenter.GetAllMammals();
+
         }
 
         private void btnBirds(object sender, RoutedEventArgs e)
         {
-            dataGridAnimals.ItemsSource = presenter.GetAllAmphibians();
+
         }
 
         private void btnAmphibians(object sender, RoutedEventArgs e)
         {
-            dataGridAnimals.ItemsSource = presenter.GetAllAmphibians();
+
         }
-        public int id { get => int.Parse(this.txtId.Text); set => int.Parse(this.txtId.Text); }
-        public string Type { get => this.txtType.Text; set  => this.txtType.Text = value;}
-        public int Count {  get => int.Parse(this.txtCount.Text);}
-        public string Description { get => this.txtDescription.Text; set=> this.txtDescription.Text = value;}
-        public List<IAnimals> animals { get => this.animals; set => this.animals = value;}
+
+
+
+        //public string id { get => this.txtId.Text; set => this.txtId.Text = value; }
+        //public string Type { get => this.txtType.Text; set  => this.txtType.Text = value;}
+        //public string Count { get => this.txtCount.Text; set => this.txtCount.Text = value; }
+        //public string Name { get => this.txtName.Text; set => this.txtName.Text = value; }
+        //public string Description { get => this.txtDescription.Text; set=> this.txtDescription.Text = value;}
+        public List<IAnimals> animals { get => this.animals; set => this.animals = value; }
 
     }
 }

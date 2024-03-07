@@ -9,39 +9,20 @@ using Module_18_Pattern_WPF_HomeWork.PresenterAnimals;
 
 namespace Module_18_Patern_WPF_HomeWork.PresenterAnimals
 {   
-    class Presenter :IModel
+    class Presenter
     {
-        Repository repository;
-        IAnimals animals;
-        public List<IAnimals> GetAllAnimals()
-        {   
-           
-            return   repository.GetAnimals().ToList();
-        }
-        public List<IAnimals> GetAllMammals()
+        IView view;
+        IModel model;
+
+        public Presenter(IView view)
         {
-            return repository.GetAnimalsConcert("Mammals").ToList();
+            this.view = view;
+            model = new Repository();
         }
-        public List<IAnimals> GetAllBirds()
+        public List<IAnimals> ResultGetAnimals()
         {
-            return repository.GetAnimalsConcert("Birds").ToList();
-        }
-        public List<IAnimals> GetAllAmphibians()
-        {
-            return repository.GetAnimalsConcert("Amphibians").ToList();
-        }
-        public void Update()
-        {
-            repository.Update(animals);
-            
-        }
-        public void Create()
-        {
-            repository.Create(animals);
-        }
-        public void Delete()
-        {
-            repository.Delete(animals);
+            view.animals = model.GetAnimals();
+            return model.GetAnimals();
         }
     }
 }
